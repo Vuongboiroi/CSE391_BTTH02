@@ -1,0 +1,10 @@
+.all {
+    display: flex;
+    background-color: white;
+    margin-left: 200px;
+    margin-right: 200px;
+
+  }
+.content-left{
+    margin-right: 150px;
+}
