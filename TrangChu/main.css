@@ -13,28 +13,49 @@
     height: 70px;
     margin: 10px ;
 }
+.menu-con{
+    position: absolute;
+    bottom: -200;
+    width: 216px;
+    left: 0;
+    z-index: 20;
+    background: #f4f4f4;
+    border: 1px solid #dadada;
+
+}
+
 ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
 }
-a{
+.menu a{
     text-decoration: none;
     font-size: 15px;
     font-weight: 600;
     color: #000000;
 }
-a:hover{
+.menu a:hover{
+    color: #0B249E;
+
+}
+.menu-cha:hover .menu-con{
+    display: block;
     color: #0B249E;
 }
 ul li{
     list-style-type: none;
     padding: 10px 20px;
+    
+}
+.menu-cha{
+    position: relative;
 }
 .menu-con{
     display: none;
 }
+
 
 .text-conten{
     text-align: center;
@@ -121,11 +142,15 @@ ul li{
     font-weight: 500;
     padding-left: 7px;
 }
+textarea{
+    width: 460px;
+    padding-top: 10px;
+}
 
 #note{
     border: 2px solid #f5ec10;
     color: #f5ec10;
-    padding: 10px 0px;
+    padding: 1px 0px;
     font-size: 30px;
     margin-bottom: 30px;
     text-align: center;
@@ -154,34 +179,44 @@ ul li{
     justify-content: center;
     text-align: center;
     height: 320px;
-    margin: 96px 188px 0 188px;
+    margin: 96px 160px 0 160px;
 }
 .commen-left{
     border-right: 2px solid rgb(255, 123, 6);
     height: 216px;
+    padding-right: 10px;
 }
 .commen-left h1{
     color: #0b249e;
     font-weight: 700;
     line-height: 54px;
+    font-size: 30px;
+    
 
 }
 .commen-left h3{
     color: #433f3f;
     line-height: 36px;
+    font-size: 20px;
+    width: 352px;
+    margin-right: 10px;
 }
 .commen-right h3{
     color: #433f3f;
-    padding: 6px;
+    padding-left: 30px;
     line-height: 31.5px;
+    font-size: 21px;
+    width: 675px;
 }
 #scle{
-    padding: 15px 22px;
+    padding: 14px 22px;
     border-radius: 5px;
     color: white;
     font-weight: 700;
     background-color: #0C9841;
     border: none;
+    margin-top: 20px;
+    
 }
 #scle:hover{
     background:#da6a07 ;
@@ -193,33 +228,43 @@ ul li{
     flex-direction: column;
     gap: 12px;
     justify-content: center;
-    color: white;
+    color: white;           
+    padding-left: 24px;
+    transform: translateY(20px);
+ 
 }
 video{
     width: 560px;
-    height: 273px;
+    height: 460px;
+    padding-left: 20px;
+    margin-right: 50px;
+    transform: translateY(-50px);
+   
 }
 .hi{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     line-height: 27px;
     width: 100%;
     height: 600px;
     background: linear-gradient(rgb(74,27,212) , rgb(23,194,220) 100%);
+    
+    border: 1px solid red;
 }
 .text1,.text2,.text3{
     text-align: left;
     width: 450px;
     height: 95px;
     line-height: 27px;
-    padding: 10px 0;
+    margin-bottom: 22px;
 }
 .text h3{
-    margin-bottom: 20px;
+    font-size: 18px;
 }
 .text h1{
     line-height: 54px;
+    font-size: 30px;
 }
 .icon{
     display: inline-block;
@@ -227,7 +272,8 @@ video{
     height: 80px;
     background: white;
     border-radius: 50%;
-    transform: translateY(17px);
+    transform: translateY(10px);
+    margin-right: 20px;
 }
 .selector-conten1,.selector-conten2,.selector-conten3{
     display: flex;
@@ -263,7 +309,7 @@ video{
 }
 .section-box{
     margin-top: 180px;
-    height: 970px;
+    height: 1020px;
     background: linear-gradient(rgb(74,27,212) , rgb(23,194,220) 100%);
     padding: 90px 138px 70px 138px;
     position: relative;
@@ -301,7 +347,7 @@ video{
 .section-left{
     margin-right: 33px;
 }
-.boxer1,.boxer2,.boxer3,.boxer4,.boxer5,.boxer6{
+.boxer1{
     border: 1px solid white;
     border-radius: 10px;
     height: 175px;
@@ -309,18 +355,24 @@ video{
     justify-content: space-around;
     padding: 23px 13px;
 }
-.text-r1,.text-r2,.text-r3,.text-r4,.text-r5,.text-r6{
+#loi{
+    padding-bottom: 100px;
+}
+.text-r1{
     color: white;
     text-align: left;
     padding-left: 20px;
+    
 }
 .section img{
     width: 81px;
     height: 81px;
     transform: translateY(13px);
 }
+
 .section h3{
     line-height: 30.6px;
+    font-size: 17px;
 }
 .section p{
     line-height: 27px;
@@ -330,7 +382,7 @@ video{
     border: 1px solid white;
     color: white;
     font-size: 19px;
-    transform: translate(490px,56px);
+    transform: translate(490px,70px);
     width: 221px;
     height: 62px;
 }
@@ -371,6 +423,7 @@ video{
 .ekit-heading h2{
     text-align: center;
     padding-top: 50px;
+    font-size: 25px;
 }
 .ekit-heading{
     background: #e9e9e9;
@@ -402,6 +455,7 @@ video{
     height: 350px;
     margin-top: 10px;
     padding: 5px 74px;
+   
 
 }
 .ebox{
@@ -414,13 +468,13 @@ video{
     color: #0b249e;
     font-size: 13px;
     margin-left: 20px;
-    margin-top: 12px;
 }
 .p-bode{
     height: 14px;
     width: 1px;
     background: #0b249e;
     margin: 0 7px;
+   
 }
 .post-cat i{
     margin-right: 10px;
@@ -431,6 +485,7 @@ video{
     color: #0b249e;
     font-size: 13px;
     margin-left: 20px;
+    height: 27px;
 }
 .date i{
     margin-right: 10px;
@@ -445,21 +500,21 @@ video{
     font-size: 15px;
     width: 265px;
     margin-left: 21px;
-    margin-top: 20px;
     line-height: 22px;
-    padding: 0;
+   
+
 }
 .ebox button{
     background: #2575fc;
     text-align: left;
-    align-items: center;
     margin-left: 20px;
     width: 112px;
     height: 34px;
     border: none;
     color: white;
-    padding: 10px 20px;
-    margin-top: 13px;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-size: 14px;
     
 }
 .ebox button:hover{
@@ -472,6 +527,7 @@ video{
 .footer-top h1{
     text-align: center;
     margin-top: 44px;
+    font-size: 30px;
 }
 .anh{
     display: flex;
@@ -512,11 +568,15 @@ video{
     display: flex;
     justify-content: space-around;
     padding-top: 70px;
+    
+}
+.footer-conten h2{
+    font-size: 20px;
 }
 .ftext-left{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     margin-top: 20px;
     font-weight: 600;
 }
@@ -559,4 +619,165 @@ video{
     transform-origin: 50% 50%;
 }
 
+.number{
+    width: 170px;
+    height: 55px;
+    background:  #02a300;
+    border-radius: 25px;
+    transform: translate(60px,9.25px);
+    z-index: -10;
+    position: relative;
+}
+.ani0{
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: loa 0.6s  infinite linear;
+    position: absolute;
+    z-index: 5;
+    top: 22px;
+    left: 21px;
+    margin-left: 50px;
+    background-color: rgb(255, 255, 255);
+    
+    
+}
+.number p{
+    padding-left: 66px;
+    padding-top: 14px;
+    color: white;
+    font-size: 15px;
+}
+.ani1{
+    background-color: white;
+    width: 9px;
+    height: 9px;
+    transform: rotate(5deg);
+    position: absolute;
+    bottom: 0px;
+    left: -4px;
+    z-index: 5;
+}
 
+.phone {
+    background-color: white;
+    font-size: 20px;
+    color:  #02a300;
+    position: relative;
+    border-radius: 50%;
+    z-index: 10;
+  
+}
+.ani2{
+    background:  #02a300;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin-left: 25px;
+    position: absolute;
+    top: 9.9px;
+    left: 34.7px;
+    z-index: 2;
+    
+}
+.ani3{
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: rgba(80, 82, 82, 0.432);
+    position: absolute;
+    top: 6px;
+    left: 56px;
+    animation: circle2 1.5s infinite linear;
+}
+.fixed{
+    position: fixed;
+    top: 500px;
+    right: 135px;
+    z-index: 10000;
+}
+.ani4{
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   border: 1px solid rgb(56, 54, 54);
+   position: absolute;
+   top: -23.5px;
+   left: -23.5px;
+   animation: circle3 1s infinite linear;
+    
+}
+@keyframes loa{
+    0%{
+        transform: rotate(0);
+    }
+    
+    30%{
+        transform: rotate(-22deg);
+    }
+    60%{
+        transform: rotate(20deg);
+    }
+    80%{
+
+        transform: rotate(-22deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes circle2 {
+    0% {
+       
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1.4);
+    }
+    75%{
+        transform: scale(1.2);
+        
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes circle3{
+    0% {
+       opacity: 0.4;
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+        opacity: 0.2;
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+.messenger{
+    position: fixed;
+    top: 400px;
+    right: 10px;
+    z-index: 10000;
+    width: 50px;
+    height: 50px;
+    background: #0075ff;
+    border-radius: 50%;
+   
+}
+.messenger img{
+    width: 44px;
+    height: 45px;
+    padding: 8px 0 0 6px;
+}
+
+   
